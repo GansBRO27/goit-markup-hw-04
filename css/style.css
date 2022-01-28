@@ -17,9 +17,14 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
 }
 img {
   display: block;
+}
+p, h1, h2, h3, h4 {
+  margin: 0;
 }
 
 .headers-none {
@@ -110,26 +115,34 @@ img {
 }
 
 .contact-link {
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  fill: currentColor;
+  display: flex;
+  align-items: center;
 }
-.hero {
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-  background-color: var(--hero-footer-color);
-  background-image: url(../images/hero-back.jpg);
+.mail-and-pfone {
+  margin-right: 10px;
+}
+.container-hero {
   max-width: 1600px;
-  background-position: center;
-  background-size: cover;
+  min-height: 600px;
   
- 
+  margin-left:  auto;
+   margin-right:  auto;
+   text-align: center; 
+   padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--hero-footer-color);
+   background-image:  linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-back.jpg);
+  background-position:  center;
+background-size: cover;
 }
-
 
 .hero-title {
   margin-top: 0;
@@ -157,14 +170,20 @@ img {
   cursor: pointer;
   border: 0px;
 }
-.section.section-skills {
-  padding-bottom: 0;
-}
+
 .skill-list {
   display: flex;
 }
+
 .skill-items {
   max-width: 270px;
+}
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
 }
 .skill-items:not(:last-child) {
   margin-right: 30px;
@@ -212,6 +231,14 @@ img {
   color: var(--headers-text-color);
 }
 .team-list {
+  display: flex;
+
+}
+.team-list-items:not(:last-child) {
+ margin-right: 30px;
+}
+
+.team-list-items {
   width: 270px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -229,12 +256,13 @@ img {
   color: var(--headers-text-color);
 }
 .team-container {
+  padding-left: 32px;
+  padding-right: 32px;
   padding-bottom: 30px;
-  padding-top: 20px;
 }
 .profession {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.2;
@@ -242,10 +270,73 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+.social-net-list {
+  display: flex;
+  align-items: center;
+  
 
-.basement {
-  background-color: var(--headers-text-color);
 }
+.social-networks {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.network-link {
+  width: 100%;
+  height: 100%;
+   align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #FFFFFF;
+  fill: #AFB1B8;
+  border-radius: 50%;
+}
+.network-link:hover {
+  background-color: var(--fover-focus-color);
+  fill: var(--white-color);
+}
+.social-networks:not(:last-child) {
+  margin-right: 10px;
+}
+.regular-customers {
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.03em;
+color: #212121;
+text-align:center;
+margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+
+}
+.clients-list-item {
+   width: 170px;
+  height: 92px;
+}
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+
+}
+.clients-link:hover {
+  border-color: var(--fover-focus-color) ;
+   fill: var(--fover-focus-color);
+}
+.clients-link {
+ 
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  fill: #AFB1B8 ;
+  width: 100%;
+  height: 100%;
+}
+
+
 .location {
   margin-bottom: 9px;
   line-height: 1.7;
@@ -259,8 +350,24 @@ img {
 }
 
 .basement {
-  padding-top: 50px;
-  padding-bottom: 50px;
+ 
+  background-color: var(--headers-text-color);
+}
+
+
+
+.footer-flex-container{
+  display: flex;
+  
+}
+.fotter-links-container {
+padding-top: 72px;
+padding-bottom: 100px;
+}
+.footer-container {
+  margin-right: 70px;
+   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-link {
   line-height: 1.7;
@@ -280,7 +387,7 @@ img {
 .logo-footer-link {
   margin-bottom: 20px;
   display: inline-block;
-
+  
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -292,7 +399,45 @@ img {
 .footer-logo {
   color: var(--white-color);
 }
+.join {
+margin-bottom: 20px;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 
+color: #FFFFFF;
+}
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-links {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  fill: #FFFFFF;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  
+}
+.footer-social-links:hover {
+  background: var(--fover-focus-color);
+}
+
+.footer-social-items:not(:last-child) {
+  margin-right: 10px;
+
+
+}
+
+
+.social-net-icons:hover {
+  fill: #FFFFFF;
+} 
 /*стили для портфолио  */
 
 .btn {
@@ -310,6 +455,7 @@ img {
   display: block;
   border: 0;
 }
+
 .img-list {
   display: flex;
   margin-left: -30px;
@@ -325,12 +471,17 @@ img {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
+.port-link {
+  display: block;
+
+}
 
 .projects {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-top: 20px;
+  
 
 }
 .product {
@@ -341,6 +492,7 @@ img {
   max-width: 100%;
   margin-bottom: 0;
   margin-top: 0;
+  
 }
 
 .product-description {
@@ -368,4 +520,4 @@ img {
   color: var(--white-color);
 }
 
-/*  
+/*  Владислав сделай ресетовіе классы для заголовков и списков
