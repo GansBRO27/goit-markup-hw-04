@@ -291,12 +291,12 @@ margin-bottom: 30px;
    align-items: center;
   justify-content: center;
   display: flex;
-  background-color: #FFFFFF;
+  
   fill: #AFB1B8;
   border-radius: 50%;
 }
 .network-link:hover , .network-link:hover {
-  background-color: var(--fover-focus-color);
+  background: var(--fover-focus-color);
   fill: var(--white-color);
 }
 .social-networks:not(:last-child) {
