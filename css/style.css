@@ -465,17 +465,15 @@ color: #FFFFFF;
   margin-top: 30px;
   margin-left: 30px;
   max-width: 370px;
-    border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
+
 }
 .port-link {
   display: block;
   width: 100%;
   height: 100%;
 }
-.img-list-items:hover ,.img-list-items:focus {
- border: 0;
+.port-link:hover ,.port-link:focus {
+ 
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -484,7 +482,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   padding-right: 24px;
   padding-bottom: 20px;
   padding-top: 20px;
-  
+     border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 
 }
 .product {
