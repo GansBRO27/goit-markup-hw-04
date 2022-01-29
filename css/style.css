@@ -245,7 +245,7 @@ background-size: cover;
 }
 .team {
   margin-bottom: 10px;
-  margin-top: 0;
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -260,7 +260,7 @@ background-size: cover;
   padding-top: 30px;
 }
 .profession {
-  margin-top: 0;
+  
   margin-bottom: 16px;
 
   font-size: 16px;
